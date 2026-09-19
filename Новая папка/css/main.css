@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    padding: 290px 0px;
+    text-align: center;
+    background: url('../image/main/logo.avif') center/cover;
+}
+
+.menu{
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px -400px;
+    z-index: 1000; 
+}
+
+.menu ul {
+    list-style: none;
+    margin: 30px;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around;
+
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+    font-family: Comic Sans, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.plane{
+    position: relative;
+    margin-top: 60px;
+    margin-left: 65px;
+    border-radius: 40px;
+    border: 3px solid #FF7D40;
+    display: inline-block;
+}
+
+.text1{
+    margin-top: 100px;
+    margin-left: 60px;
+    position: absolute;
+    font-family: Comic Sans, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    max-width: 70%; 
+    white-space: normal; 
+    word-wrap: break-word;
+}
+
+.ticket{
+    border: 3px solid #FF7D40;
+    display: inline-block;
+    position: relative;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-left: 1300px;
+}
+
+.text2{
+    margin-top: 100px;
+    margin-left: -1800px;
+    position: absolute;
+    font-family: Comic Sans, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    white-space: normal; 
+    word-wrap: break-word;
+    max-width: 65%; 
+}
+
+body {
+    background-color: #7ca37888; 
+}

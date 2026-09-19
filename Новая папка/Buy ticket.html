@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Buying a ticket</title>
+<link rel="stylesheet" href="css/bilet.css" />
+</head>
+<body>
+<h2>Покупка билета</h2>
+<form id="ticketForm">
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname" required />
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="patronymic">Отчество:</label>
+    <input type="text" id="patronymic" name="patronymic" />
+
+    <label for="phone">Номер телефона:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Введите номер" required />
+
+    <label for="date">Дата билета:</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="country">Страна назначения:</label>
+    <select id="country" name="country" required>
+        <option value="">Выберите страну</option>
+        <option value="Россия">Россия</option>
+        <option value="Франция">Франция</option>
+        <option value="Испания">Испания</option>
+        <option value="Италия">Италия</option>
+        <option value="Германия">Германия</option>
+        <option value="Америка">Америка</option>
+        <option value="Канада">Канада</option>
+        <option value="Австралия">Австралия</option>
+        <option value="Япония">Япония</option>
+    </select>
+    <button type="submit">Купить билет</button>
+    <div class="error" id="errorMsg"></div>
+</form>
+<a href="Takeoff.html" class="button-link" target="_blank" rel="noopener noreferrer" title="Открыть в новой вкладке">Вернуться на главную</a>
+<script src="script.js"></script>
+</body>
+</html>

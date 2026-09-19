@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Register</title>
+<link rel="stylesheet" href="css/register.css" />
+</head>
+<body>
+<div class="registration-form">
+    <h2>Регистрация</h2>
+    <form id="registerForm" action="/register" method="POST">
+        <input type="text" name="fullname" id="fullname" placeholder="ФИО" required />
+        <input type="email" name="email" placeholder="Эл. почта" required />
+        <input type="tel" name="telefon" placeholder="Телефон" required />
+        <input type="text" name="passport" id="passport" placeholder="Серия и номер паспорта" required />
+        <input type="password" name="password" id="password" placeholder="Пароль" required />
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Подтвердите пароль" required />
+        <div class="button-group">
+            <button class="button" type="submit">Зарегистрироваться</button>
+            <button class="button secondary" type="button" id="loginButton">Войти</button>
+        </div>
+    </form>
+</div>
+<div>
+    <img class="qr" src="../image/qr.png">
+</div>
+<a href="Takeoff.html" class="button-link" target="_blank" rel="noopener noreferrer" title="Открыть в новой вкладке">Вернуться на главную</a>
+<script src="register.js"></script>
+</body>
+</html>
